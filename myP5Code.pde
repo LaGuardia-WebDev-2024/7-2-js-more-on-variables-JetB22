@@ -7,6 +7,8 @@ void setup() {
 var x = 200;
 var y = 100;
 
+
+
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
   background(255,255,255,200);
@@ -16,16 +18,29 @@ void draw(){
   noStroke();
   fill(30, 204, 91); // a nice froggy green!
 
+  ellipse(x,y+100,mouseY+50,mouseY+150)
+
   ellipse(x, y, 200, 100); // face
   ellipse(x - 50, y - 50, 40, 40); // left eye socket
   ellipse(x + 50, y - 50, 40, 40); // right eye socket
+
+  
 
   fill(255, 255, 255); // for the whites of the eyes!
   ellipse(x - 50, y - 50, 30, 30); // left eyeball
   ellipse(x + 50, y - 50, 30, 30); // right eyeball
   
+  fill(0,0,0)
+  ellipse(x - 50, y - 50, 20, 20);
+  ellipse(x + 50, y - 50, 20, 20);
+  
+  fill(200,50,5)
+  ellipse(x, y + 5 , 175 , 35)
 
+  
+  y = mouseY;
 }
+
 
 
 
